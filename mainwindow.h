@@ -12,12 +12,11 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QApplication *app, QWidget *parent = 0);
     ~MainWindow();
-    void letspaint();
 
 private slots:
-    void on_pushButton_clicked();
+    void letspaint();
 
 private:
     Ui::MainWindow *ui;

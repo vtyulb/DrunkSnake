@@ -38,7 +38,7 @@
      <property name="title">
       <string>Сложность</string>
      </property>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="difficultycomboBox">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -81,7 +81,7 @@
      <property name="title">
       <string>Режим игры</string>
      </property>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="gmodecomboBox">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -103,7 +103,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -116,7 +116,7 @@
      <string>Старт</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pauseButton">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -129,7 +129,7 @@
      <string>Пауза</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="restartButton">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -154,7 +154,7 @@
     <property name="title">
      <string>Имя</string>
     </property>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="nameEdit">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -189,7 +189,7 @@
     <property name="title">
      <string>Игра</string>
     </property>
-    <addaction name="action_3"/>
+    <addaction name="abyssAction"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -198,7 +198,7 @@
     <addaction name="separator"/>
     <addaction name="action_2"/>
     <addaction name="actionQt"/>
-    <addaction name="action_Qt"/>
+    <addaction name="qtAction"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -217,7 +217,7 @@
     <string>Об игре</string>
    </property>
   </action>
-  <action name="action_Qt">
+  <action name="qtAction">
    <property name="text">
     <string>О Qt</string>
    </property>
@@ -227,7 +227,7 @@
     <string>Режимы игры</string>
    </property>
   </action>
-  <action name="action_3">
+  <action name="abyssAction">
    <property name="text">
     <string>Бездна</string>
    </property>
