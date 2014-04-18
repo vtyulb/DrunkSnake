@@ -32,9 +32,9 @@ void PaintWidget::repaint_slot()
     repaint();
 }
 
-void PaintWidget::paint_event()
+void PaintWidget::paintEvent(QPaintEvent *event)
 {
-//    qDebug() << "paintevent called" << rand()%100;
+    qDebug() << "paintevent called" << rand()%100;
 
     QPainter p(this);
 
@@ -49,4 +49,5 @@ void PaintWidget::paint_event()
     p.drawPixmap(x_head - 8, y_head - 8, *pix);
 
     p.end();
+    event->accept();
 }

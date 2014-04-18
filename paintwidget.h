@@ -19,7 +19,7 @@ public:
     explicit PaintWidget(QWidget *parent = 0);
     void keyPressEvent(QKeyEvent *event);
     void repaint_slot();
-    void paint_event();
+    void paintEvent(QPaintEvent *);
 
 private:
     int length;
